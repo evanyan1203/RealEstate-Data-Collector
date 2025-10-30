@@ -1,0 +1,42 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Django / Database
+db.sqlite3
+*.log
+
+# pipenv virtual environment
+# pipenv 默认不会在项目目录创建 venv（一般在用户目录）
+# 如果你手动设置了 PIPENV_VENV_IN_PROJECT=1，则忽略该文件夹：
+.venv/
+
+# Environment variables
+.env
+.env.*
+
+# Static files / media
+/staticfiles/
+/media/
+
+# IDE / editor files
+.vscode/
+.idea/
+
+# macOS / Windows system files
+.DS_Store
+Thumbs.db
+
+
+
+# __pycache__/：Python 编译缓存
+
+# .venv/：如果你启用了 PIPENV_VENV_IN_PROJECT，pipenv 会把虚拟环境放在项目目录下，所以加上它是最保险的
+
+# .env：存放数据库密码或密钥等环境变量
+
+# /staticfiles/、/media/：Django 生成的静态资源
+
+# .vscode/、.idea/：编辑器配置
